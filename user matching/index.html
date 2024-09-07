@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler to Local Matching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Local Guide/Artist</h1>
+
+        <!-- Traveler Input Form -->
+        <form id="travelerForm">
+            <label for="destination">Enter your destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="interests">Your interests (e.g., Food, Art, History):</label>
+            <input type="text" id="interests" name="interests" required>
+
+            <button type="submit">Find Locals</button>
+        </form>
+
+        <!-- Display Matched Locals -->
+        <h2>Matched Locals</h2>
+        <div id="matchedLocals"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
